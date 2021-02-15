@@ -15,9 +15,11 @@ class WebVC: UIViewController,WKNavigationDelegate {
 
     
     override func loadView() {
+        self.navigationController?.isNavigationBarHidden = true
         webVIew = WKWebView()
         webVIew.navigationDelegate = self
         view = webVIew
+
     }
     
     override func viewDidLoad() {

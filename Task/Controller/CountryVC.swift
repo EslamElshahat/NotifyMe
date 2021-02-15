@@ -15,9 +15,8 @@ enum UserDefaultKeys: String {
 class CountryVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let userID = 1
-//        UserDefaults.standard.set(userID, forKey: "id")
-//
+        self.navigationController?.isNavigationBarHidden = true
+
         title = "APP"
     }
     
